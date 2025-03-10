@@ -11,6 +11,19 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+nav {
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
 /* LAYOUT */
 
 .flex-element {
@@ -41,7 +54,7 @@ body {
 
 .col {
   padding: 0;
-  border: 2px dotted black;
+  /* border: 2px dotted black; */
   flex: 0 0 0px;
   min-height: 50vh;
 }
@@ -62,7 +75,7 @@ body {
 }
 
 .col.col-internal {
-  border: 2px dotted white;
+  /* border: 2px dotted white; */
 }
 
 /* TIPOGRAFIA */
@@ -114,6 +127,31 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.433);
 }
 
+.btn {
+  padding: 10px 17px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.btn.white {
+  background-color: white;
+  color: #333;
+  border: 1px solid white;
+}
+
+.btn.dark {
+  background-color: #23272a;
+  color: white;
+  border: 1px solid #23272a;
+}
+
+.btn.resize {
+  font-size: 20px;
+}
+
+.white-font {
+  color: white;
+}
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
@@ -141,7 +179,7 @@ ul {
 }
 
 .bgblue {
-  background-color: #1c90ff;
+  background-color: #255ee8;
 }
 
 .bgpink {
@@ -183,7 +221,7 @@ header {
 }
 
 header .container {
-  background-color: #daa71f;
+  /* background-color: #daa71f; */
   text-align: center;
 }
 
@@ -199,14 +237,28 @@ header .col {
 }
 
 .container.undermenu {
-  width: 60%;
-  background-color: #ef82ec;
+  width: 50%;
+  /* background-color: #ef82ec; */
   margin: 0 auto;
-  min-height: 40vh;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  line-height: 25px;
 }
 
 .undermenu-section {
   padding: 50px;
+  background-image: url("../immagini/jumbo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-btn {
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
 }
 
 /* MAIN */
