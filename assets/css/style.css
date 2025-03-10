@@ -25,6 +25,10 @@ p {
   line-height: 30px;
 }
 
+i {
+  padding: 0 10px;
+}
+
 /* LAYOUT */
 
 .flex-element {
@@ -127,6 +131,7 @@ ul {
 
 .border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+  padding: 20px 0;
 }
 
 .btn {
@@ -160,14 +165,23 @@ ul {
   font-size: 20px;
 }
 
+.btn.blue.resize {
+  width: auto;
+  margin: 0 auto;
+}
+
 .white-font {
   color: white;
+}
+
+.blue-font {
+  color: #7288da;
 }
 
 .col-flex-gap {
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 25px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -298,7 +312,7 @@ footer .col {
 }
 
 footer .col.bottom-page {
-  min-height: 40px;
+  min-height: 10px;
   flex-grow: 1 1 0px;
   margin: 20px 0;
   display: flex;
@@ -307,4 +321,27 @@ footer .col.bottom-page {
 
 footer .col.centerspace {
   flex: 1 1 75%;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer li {
+  display: block;
+  padding: 10px 0px;
+}
+
+footer .col.col-small {
+  min-width: 25%;
+  /* background-color: #add8e7; */
+}
+
+.flag {
+  width: 20px;
+}
+
+.container-lang {
+  padding: 15px 0px 5px 0px;
+  color: white;
 }
