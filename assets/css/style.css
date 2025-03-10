@@ -21,7 +21,8 @@ li {
 }
 
 p {
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 30px;
 }
 
 /* LAYOUT */
@@ -62,12 +63,12 @@ p {
 .col.col-large {
   flex-grow: 1;
   flex-basis: 65%;
-  background-color: #208b21;
+  /* background-color: #208b21; */
 }
 
 .col.col-small {
   min-width: 35%;
-  background-color: #add8e7;
+  /* background-color: #add8e7; */
 }
 
 .col.col-single {
@@ -81,12 +82,12 @@ p {
 /* TIPOGRAFIA */
 
 h1 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 h3 {
@@ -128,7 +129,7 @@ ul {
 }
 
 .btn {
-  padding: 10px 17px;
+  padding: 10px 30px;
   border-radius: 20px;
   font-size: 1rem;
 }
@@ -152,6 +153,13 @@ ul {
 .white-font {
   color: white;
 }
+
+.col-flex-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
@@ -237,15 +245,14 @@ header .col {
 }
 
 .container.undermenu {
-  width: 50%;
+  width: 55%;
   /* background-color: #ef82ec; */
   margin: 0 auto;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
-  line-height: 25px;
+  gap: 50px;
 }
 
 .undermenu-section {
